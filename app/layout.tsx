@@ -1,32 +1,28 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, Merriweather } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const geistSans = Geist({ 
+  subsets: ["latin"],
+  variable: "--font-geist-sans"
+});
+
+const geistMono = Geist_Mono({ 
+  subsets: ["latin"],
+  variable: "--font-geist-mono"
+});
+
+const merriweather = Merriweather({ 
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+  variable: "--font-merriweather"
+});
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Alter Labs | Propuesta Ejecutiva - Ruma Muebles',
+  description: 'De la Fricción Operativa a la Ingeniería de lo Invisible. Propuesta de automatización para Ruma Muebles.',
   generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
 }
 
 export default function RootLayout({
@@ -35,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans antialiased">
+    <html lang="es">
+      <body className={`${geistSans.variable} ${geistMono.variable} ${merriweather.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
