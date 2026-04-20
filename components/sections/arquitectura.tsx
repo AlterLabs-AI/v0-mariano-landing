@@ -7,10 +7,11 @@ export function ArquitecturaSection() {
             DESTINO: EL MOTOR DE PRODUCCION
           </p>
           <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-[#F5F5F7] mb-8 max-w-3xl">
-            La Arquitectura del Dato: Solid-to-Excel
+            La Arquitectura del Dato:
+            Solid-to-Excel
           </h2>
           <p className="font-sans text-lg md:text-xl text-[#A0A0A0] leading-relaxed max-w-3xl">
-            Nuestra ingenieria traduce tus disenos de Solidworks directamente a una estructura de datos ejecutable. El sistema identifica cada parte del dibujo para generar automaticamente una planilla con cantidades exactas, dimensiones (largo, ancho, espesor) y la ubicacion tecnica de los cantos. Si esta en el dibujo, esta en tu Excel de produccion.
+            Nuestra ingenieria traduce tus diseños de Solidworks directamente a una estructura de datos ejecutable. El sistema identifica cada parte del dibujo para generar automaticamente una planilla con cantidades exactas, dimensiones (largo, ancho, espesor) y la ubicacion tecnica de los cantos. Si esta en el dibujo, esta en tu Excel de produccion.
           </p>
         </div>
 

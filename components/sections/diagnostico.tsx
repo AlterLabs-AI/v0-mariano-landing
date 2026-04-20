@@ -16,7 +16,7 @@ export function DiagnosticoSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#2A2A2A]/30">
           <div className="bg-[#050505] p-8 lg:p-12">
-            <div className="w-8 h-px bg-[#f97316] mb-6" />
+            <div className="w-8 h-px bg-[hsl(25,95%,53%)] mb-6" />
             <h3 className="font-sans text-lg font-semibold text-[#F5F5F7] mb-4">
               Fragmentacion de Datos
             </h3>
@@ -24,7 +24,7 @@ export function DiagnosticoSection() {
               Dispersion de informacion entre multiples plataformas que complica el proceso de produccion.
             </p>
           </div>
-          
+
           <div className="bg-[#050505] p-8 lg:p-12">
             <div className="w-8 h-px bg-[#f97316] mb-6" />
             <h3 className="font-sans text-lg font-semibold text-[#F5F5F7] mb-4">
@@ -34,7 +34,7 @@ export function DiagnosticoSection() {
               El paso del dibujo tecnico al presupuesto requiere un proceso de carga exhaustivo.
             </p>
           </div>
-          
+
           <div className="bg-[#050505] p-8 lg:p-12">
             <div className="w-8 h-px bg-[#f97316] mb-6" />
             <h3 className="font-sans text-lg font-semibold text-[#F5F5F7] mb-4">
@@ -44,7 +44,7 @@ export function DiagnosticoSection() {
               Proceso que depende de conocimiento especializado, limitando la capacidad de escalar.
             </p>
           </div>
-          
+
           <div className="bg-[#050505] p-8 lg:p-12">
             <div className="w-8 h-px bg-[#f97316] mb-6" />
             <h3 className="font-sans text-lg font-semibold text-[#F5F5F7] mb-4">
