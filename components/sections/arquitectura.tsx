@@ -1,160 +1,121 @@
 export function ArquitecturaSection() {
   return (
-    <section id="arquitectura" className="py-32 px-6 lg:px-12 bg-[#050505]">
+    <section id="solucion" className="py-32 px-6 lg:px-12 bg-[#0A0A0A]">
       <div className="mx-auto max-w-6xl">
-        {/* Section Header */}
-        <div className="mb-16">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#6B6B6B] mb-4">
-            EL CAMINO AL PUNTO B
+        <div className="mb-20">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#6B6B6B] mb-6">
+            DESTINO: EL MOTOR DE PRODUCCIÓN
           </p>
-          <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#F5F5F7]">
-            Arquitectura del Sistema
+          <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-[#F5F5F7] mb-8 max-w-3xl text-left">
+            La Arquitectura del Dato: Solid-to-Excel
           </h2>
+          <p className="font-sans text-lg md:text-xl text-[#A0A0A0] leading-relaxed max-w-3xl text-left">
+            Nuestra ingeniería traduce tus diseños de Solidworks directamente a una estructura de datos ejecutable. El sistema identifica cada parte del dibujo para generar automáticamente una planilla con cantidades exactas, dimensiones (largo, ancho, espesor) y la ubicación técnica de los cantos. Si está en el dibujo, está en tu Excel.
+          </p>
         </div>
 
-        {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Protocol Core */}
-          <div className="bg-[#1A1A1A] p-8 lg:p-10 rounded-lg border border-[#2A2A2A]/50">
-            <div className="mb-8">
-              <span className="font-mono text-xs uppercase tracking-wider text-[#6B6B6B]">
-                Foco: Simplicidad y resolución técnica.
+          <div className="border border-[#2A2A2A] p-8 lg:p-10">
+            <div className="mb-10">
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#6B6B6B]">
+                Foco: Simplicidad y resolución técnica
               </span>
-              <h3 className="font-sans text-2xl font-bold text-[#F5F5F7] mt-4">
+              <h3 className="font-sans text-2xl font-semibold text-[#F5F5F7] mt-4 text-left">
                 Protocolo Core
               </h3>
-              <p className="font-mono text-sm text-[#6B6B6B] mt-1">
+              <p className="font-mono text-sm text-[#6B6B6B] mt-2">
                 Motor de Flujo Vital - MVP
               </p>
             </div>
 
-            {/* Qué hacemos */}
-            <div className="mb-8">
-              <h4 className="font-mono text-xs uppercase tracking-wider text-[#F5F5F7] mb-4">
+            <div className="mb-10">
+              <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-[#F5F5F7] mb-6">
                 Qué hacemos:
               </h4>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#F5F5F7] mt-2 flex-shrink-0" />
-                  <span className="text-[#F5F5F7] text-sm leading-relaxed">
-                    Descargas el reporte de SolidWorks y lo cargas manualmente.
+              <ul className="space-y-4">
+                <li className="flex items-start gap-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] mt-2 flex-shrink-0" />
+                  <span className="text-[#A0A0A0] text-sm leading-relaxed text-left">
+                    Descargas el reporte de SolidWorks y lo cargas al sistema.
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#F5F5F7] mt-2 flex-shrink-0" />
-                  <span className="text-[#F5F5F7] text-sm leading-relaxed">
+                <li className="flex items-start gap-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] mt-2 flex-shrink-0" />
+                  <span className="text-[#A0A0A0] text-sm leading-relaxed text-left">
                     El motor procesa datos basados en costos unitarios.
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#F5F5F7] mt-2 flex-shrink-0" />
-                  <span className="text-[#F5F5F7] text-sm leading-relaxed">
+                <li className="flex items-start gap-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] mt-2 flex-shrink-0" />
+                  <span className="text-[#A0A0A0] text-sm leading-relaxed text-left">
                     Generación automática de presupuesto optimizado.
                   </span>
                 </li>
               </ul>
             </div>
 
-            {/* Qué NO hacemos */}
-            <div className="mb-8">
-              <h4 className="font-mono text-xs uppercase tracking-wider text-[#6B6B6B] mb-4">
-                Qué NO hacemos:
-              </h4>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#6B6B6B] mt-2 flex-shrink-0" />
-                  <span className="text-[#6B6B6B] text-sm leading-relaxed">
-                    No incluye interacción con el cliente final.
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#6B6B6B] mt-2 flex-shrink-0" />
-                  <span className="text-[#6B6B6B] text-sm leading-relaxed">
-                    Requiere tu intervención para la carga.
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Valor Entregado */}
-            <div className="pt-6 border-t border-[#2A2A2A]">
-              <h4 className="font-mono text-xs uppercase tracking-wider text-[#F5F5F7] mb-3">
+            <div className="pt-8 border-t border-[#2A2A2A]">
+              <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-[#F5F5F7] mb-4">
                 Valor Entregado:
               </h4>
-              <p className="text-[#F5F5F7] leading-relaxed">
+              <p className="text-[#A0A0A0] leading-relaxed text-left">
                 Cotización profesional y precisa en una fracción del tiempo.
               </p>
             </div>
           </div>
 
           {/* Protocol Apex */}
-          <div className="bg-[#1A1A1A] p-8 lg:p-10 rounded-lg border border-[#2A2A2A]/50">
-            <div className="mb-8">
-              <span className="font-mono text-xs uppercase tracking-wider text-[#FF4400]">
-                Foco: Automatización multi-agente.
+          <div className="border border-[hsl(25,95%,53%)]/30 p-8 lg:p-10">
+            <div className="mb-10">
+              <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(25,95%,53%)]">
+                Foco: Automatización multi-agente
               </span>
-              <h3 className="font-sans text-2xl font-bold text-[#F5F5F7] mt-4">
+              <h3 className="font-sans text-2xl font-semibold text-[#F5F5F7] mt-4 text-left">
                 Protocolo Apex
               </h3>
-              <p className="font-mono text-sm text-[#6B6B6B] mt-1">
+              <p className="font-mono text-sm text-[#6B6B6B] mt-2">
                 Ecosistema Autónomo - Integral
               </p>
             </div>
 
-            {/* Qué hacemos */}
-            <div className="mb-8">
-              <h4 className="font-mono text-xs uppercase tracking-wider text-[#F5F5F7] mb-4">
+            <div className="mb-10">
+              <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-[#F5F5F7] mb-6">
                 Qué hacemos:
               </h4>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#F5F5F7] mt-2 flex-shrink-0" />
-                  <span className="text-[#F5F5F7] text-sm leading-relaxed">
+              <ul className="space-y-4">
+                <li className="flex items-start gap-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] mt-2 flex-shrink-0" />
+                  <span className="text-[#A0A0A0] text-sm leading-relaxed text-left">
                     Despliegue de tres agentes: Abordaje, Procesamiento y Propuesta.
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#F5F5F7] mt-2 flex-shrink-0" />
-                  <span className="text-[#F5F5F7] text-sm leading-relaxed">
+                <li className="flex items-start gap-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] mt-2 flex-shrink-0" />
+                  <span className="text-[#A0A0A0] text-sm leading-relaxed text-left">
                     Atención al cliente desde el primer contacto.
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#F5F5F7] mt-2 flex-shrink-0" />
-                  <span className="text-[#F5F5F7] text-sm leading-relaxed">
+                <li className="flex items-start gap-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] mt-2 flex-shrink-0" />
+                  <span className="text-[#A0A0A0] text-sm leading-relaxed text-left">
                     Lectura técnica exhaustiva del archivo SolidWorks.
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#F5F5F7] mt-2 flex-shrink-0" />
-                  <span className="text-[#F5F5F7] text-sm leading-relaxed">
+                <li className="flex items-start gap-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[hsl(25,95%,53%)] mt-2 flex-shrink-0" />
+                  <span className="text-[#A0A0A0] text-sm leading-relaxed text-left">
                     Envío autónomo basado en tu criterio comercial.
                   </span>
                 </li>
               </ul>
             </div>
 
-            {/* Qué NO hacemos */}
-            <div className="mb-8">
-              <h4 className="font-mono text-xs uppercase tracking-wider text-[#6B6B6B] mb-4">
-                Qué NO hacemos:
-              </h4>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="w-1 h-1 rounded-full bg-[#6B6B6B] mt-2 flex-shrink-0" />
-                  <span className="text-[#6B6B6B] text-sm leading-relaxed">
-                    No reemplaza tu decisión final; el sistema propone, tú validas.
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Valor Entregado */}
-            <div className="pt-6 border-t border-[#2A2A2A]">
-              <h4 className="font-mono text-xs uppercase tracking-wider text-[#F5F5F7] mb-3">
+            <div className="pt-8 border-t border-[#2A2A2A]">
+              <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-[#F5F5F7] mb-4">
                 Valor Entregado:
               </h4>
-              <p className="text-[#F5F5F7] leading-relaxed">
+              <p className="text-[#A0A0A0] leading-relaxed text-left">
                 Experiencia de compra inmediata y personalizada.
               </p>
             </div>
