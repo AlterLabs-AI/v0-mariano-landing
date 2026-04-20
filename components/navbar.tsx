@@ -15,7 +15,7 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center">
             <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#6B6B6B]">
-              Furniture Intelligence
+              Ruma Intelligence
             </span>
           </div>
         </div>

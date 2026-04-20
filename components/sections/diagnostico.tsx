@@ -9,8 +9,8 @@ export function DiagnosticoSection() {
           <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#F5F5F7] mb-8 max-w-3xl">
             El Desafio de la Escala
           </h2>
-          <p className="font-serif text-lg md:text-xl text-[#A0A0A0] leading-relaxed max-w-3xl">
-            La brecha entre el modelo digital y la lista de materiales final representa el punto de friccion donde el crecimiento del negocio suele estancarse. Identificamos que la transferencia de informacion tecnica requiere un filtrado inteligente para asegurar que la vision del disenador llegue al taller sin alteraciones.
+          <p className="font-sans text-lg md:text-xl text-[#A0A0A0] leading-relaxed max-w-3xl">
+            La brecha entre el modelo digital y la lista de materiales final es el punto donde la eficiencia se detiene. Ruma Intelligence soluciona esta desconexion, asegurando que la complejidad del diseno se transforme en una lista de corte milimetrica de forma instantanea.
           </p>
         </div>
 

@@ -1,19 +1,19 @@
 const items = [
   {
-    title: "No Software Generico",
+    title: "No vendemos software generico",
     description: "Cada solucion es disenada a medida para tu flujo de trabajo especifico.",
   },
   {
-    title: "No Marketing",
-    description: "Nos enfocamos exclusivamente en la ingenieria operativa, no en la promocion.",
+    title: "No somos consultoria de marketing",
+    description: "Nos enfocamos exclusivamente en la ingenieria operativa.",
   },
   {
-    title: "No Imposicion de Procesos",
+    title: "No imponemos procesos que alteren tu forma de disenar",
     description: "Nos adaptamos a tu metodologia existente, no al reves.",
   },
   {
-    title: "No Almacenamiento de IP",
-    description: "Tu propiedad intelectual permanece bajo tu control absoluto.",
+    title: "No almacenamos tu propiedad intelectual en servidores externos",
+    description: "Tu IP permanece bajo tu control absoluto.",
   },
 ]
 

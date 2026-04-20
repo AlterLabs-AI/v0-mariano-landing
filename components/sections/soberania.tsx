@@ -10,14 +10,11 @@ export function SoberaniaSection() {
             La Soberania del Experto
           </h2>
           <div className="space-y-6">
-            <p className="font-serif text-lg md:text-xl text-[#A0A0A0] leading-relaxed">
-              En Alter Labs, nuestra ingenieria no busca reemplazar el criterio humano, sino potenciarlo.
-            </p>
-            <p className="font-serif text-lg md:text-xl text-[#A0A0A0] leading-relaxed">
+            <p className="font-sans text-lg md:text-xl text-[#A0A0A0] leading-relaxed">
               El retorno de esta inversion se mide en la seguridad tecnica de que cada pieza es exacta desde el primer intento.
             </p>
-            <p className="font-serif text-lg md:text-xl text-[#F5F5F7] leading-relaxed">
-              Construimos sistemas silenciosos para que tu trabajo sea el que haga ruido.
+            <p className="font-sans text-lg md:text-xl text-[#F5F5F7] leading-relaxed">
+              En Alter Labs, construimos sistemas silenciosos para que tu trabajo sea el que haga ruido.
             </p>
           </div>
         </div>

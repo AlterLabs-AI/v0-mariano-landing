@@ -81,14 +81,14 @@ export function HeroSection() {
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-12 py-24 w-full">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#6B6B6B] mb-8">
-          ALTER LABS // FURNITURE INTELLIGENCE
+          ALTER LABS // RUMA INTELLIGENCE
         </p>
 
-        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-[#F5F5F7] mb-10 leading-[1.1] max-w-4xl">
-          Furniture Intelligence: Ingenieria de lo Invisible
+        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight text-[#F5F5F7] mb-10 leading-[1.1] max-w-4xl">
+          Ruma Intelligence: Ingenieria de lo Invisible
         </h1>
 
-        <p className="font-serif text-lg md:text-xl lg:text-2xl text-[#A0A0A0] leading-relaxed max-w-3xl">
+        <p className="font-sans text-lg md:text-xl lg:text-2xl text-[#A0A0A0] leading-relaxed max-w-3xl">
           Optimizando la transicion del diseno a la realidad tecnica para recuperar tu recurso mas valioso: el tiempo de creacion.
         </p>
       </div>
