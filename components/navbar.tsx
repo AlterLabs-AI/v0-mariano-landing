@@ -9,7 +9,7 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
             <span className="text-lg font-semibold text-[#F5F5F7]">
-              Alter Labs<span className="text-[#f97316]">.</span>
+              Alter Labs<span className="text-[hsl(25,95%,53%)]">.</span>
             </span>
           </Link>
 

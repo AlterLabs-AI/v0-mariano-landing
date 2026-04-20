@@ -9,7 +9,7 @@
   --void-black: #050505;
   --deep-onyx: #1A1A1A;
   --off-white: #F5F5F7;
-  --intl-orange: #FF4400;
+  --intl-orange: hsl(25, 95%, 53%);
   
   /* Design Tokens */
   --background: #050505;
@@ -18,7 +18,7 @@
   --card-foreground: #F5F5F7;
   --popover: #1A1A1A;
   --popover-foreground: #F5F5F7;
-  --primary: #FF4400;
+  --primary: hsl(25, 95%, 53%);
   --primary-foreground: #050505;
   --secondary: #1A1A1A;
   --secondary-foreground: #F5F5F7;
@@ -26,11 +26,11 @@
   --muted-foreground: #6B6B6B;
   --accent: #1A1A1A;
   --accent-foreground: #F5F5F7;
-  --destructive: #FF4400;
+  --destructive: hsl(25, 95%, 53%);
   --destructive-foreground: #050505;
   --border: #2A2A2A;
   --input: #1A1A1A;
-  --ring: #FF4400;
+  --ring: hsl(25, 95%, 53%);
   --radius: 0.5rem;
 }
 
@@ -65,7 +65,7 @@
   --color-void-black: #050505;
   --color-deep-onyx: #1A1A1A;
   --color-off-white: #F5F5F7;
-  --color-intl-orange: #FF4400;
+  --color-intl-orange: hsl(25, 95%, 53%);
 }
 
 @layer base {
@@ -102,4 +102,31 @@
 
 .animate-flicker {
   animation: flicker 0.15s ease-in-out infinite;
+}
+
+/* Grid scan animation */
+@keyframes scan-line {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes grid-pulse {
+  0%, 100% {
+    opacity: 0.03;
+  }
+  50% {
+    opacity: 0.08;
+  }
+}
+
+.animate-scan-line {
+  animation: scan-line 8s linear infinite;
+}
+
+.animate-grid-pulse {
+  animation: grid-pulse 4s ease-in-out infinite;
 }

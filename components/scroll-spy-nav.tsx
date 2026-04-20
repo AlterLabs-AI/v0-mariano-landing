@@ -60,7 +60,7 @@ export function ScrollSpyNav() {
             <span
               className={`font-mono text-xs uppercase tracking-wider transition-colors duration-300 ${
                 activeSection === section.id
-                  ? "text-[#f97316]"
+                  ? "text-[hsl(25,95%,53%)]"
                   : "text-[#6B6B6B] group-hover:text-[#F5F5F7]"
               }`}
             >
@@ -69,7 +69,7 @@ export function ScrollSpyNav() {
             <span
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 activeSection === section.id
-                  ? "bg-[#f97316] scale-125"
+                  ? "bg-[hsl(25,95%,53%)] scale-125"
                   : "bg-[#2A2A2A] group-hover:bg-[#6B6B6B]"
               }`}
             />

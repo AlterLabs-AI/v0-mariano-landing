@@ -1,15 +1,15 @@
 const items = [
   {
-    title: "No vendemos software generico",
-    description: "Cada solucion es disenada a medida para tu flujo de trabajo especifico.",
+    title: "No vendemos software genérico",
+    description: "Cada solución es diseñada a medida para tu flujo de trabajo específico.",
   },
   {
-    title: "No somos consultoria de marketing",
-    description: "Nos enfocamos exclusivamente en la ingenieria operativa.",
+    title: "No somos consultoría de marketing",
+    description: "Nos enfocamos exclusivamente en la ingeniería operativa.",
   },
   {
-    title: "No imponemos procesos que alteren tu forma de disenar",
-    description: "Nos adaptamos a tu metodologia existente, no al reves.",
+    title: "No imponemos procesos que alteren tu forma de diseñar",
+    description: "Nos adaptamos a tu metodología existente, no al revés.",
   },
   {
     title: "No almacenamos tu propiedad intelectual en servidores externos",
@@ -23,10 +23,10 @@ export function QueNoHacemosSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-20">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#6B6B6B] mb-6">
-            LIMITES CLAROS
+            LÍMITES CLAROS
           </p>
-          <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#F5F5F7] max-w-3xl">
-            Que no hacemos
+          <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-[#F5F5F7] max-w-3xl text-left">
+            Qué no hacemos
           </h2>
         </div>
 
@@ -39,10 +39,10 @@ export function QueNoHacemosSection() {
                 </span>
               </div>
               <div>
-                <h3 className="font-sans text-lg font-semibold text-[#F5F5F7] mb-3">
+                <h3 className="font-sans text-lg font-semibold text-[#F5F5F7] mb-3 text-left">
                   {item.title}
                 </h3>
-                <p className="text-[#6B6B6B] leading-relaxed">
+                <p className="text-[#6B6B6B] leading-relaxed text-left">
                   {item.description}
                 </p>
               </div>

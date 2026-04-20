@@ -52,7 +52,7 @@ export function HeroSection() {
             ctx.beginPath()
             ctx.moveTo(node.x, node.y)
             ctx.lineTo(other.x, other.y)
-            ctx.strokeStyle = `rgba(249, 115, 22, ${0.03 * (1 - dist / 180)})`
+            ctx.strokeStyle = `hsla(25, 95%, 53%, ${0.04 * (1 - dist / 180)})`
             ctx.lineWidth = 0.5
             ctx.stroke()
           }
@@ -74,22 +74,46 @@ export function HeroSection() {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20">
+      {/* Canvas node animation */}
       <canvas
         ref={canvasRef}
         className="absolute inset-0 z-0"
       />
 
+      {/* Grid overlay with pulse */}
+      <div 
+        className="absolute inset-0 z-[1] pointer-events-none animate-grid-pulse"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(107, 107, 107, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(107, 107, 107, 0.03) 1px, transparent 1px)
+          `,
+          backgroundSize: '60px 60px'
+        }}
+      />
+
+      {/* Scan line */}
+      <div className="absolute inset-0 z-[2] pointer-events-none overflow-hidden">
+        <div 
+          className="absolute left-0 right-0 h-[1px] animate-scan-line"
+          style={{
+            background: 'linear-gradient(90deg, transparent, hsl(25, 95%, 53%), transparent)',
+            opacity: 0.3
+          }}
+        />
+      </div>
+
       <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-12 py-24 w-full">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#6B6B6B] mb-8">
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-[hsl(25,95%,53%)] mb-8">
           ALTER LABS // RUMA INTELLIGENCE
         </p>
 
-        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight text-[#F5F5F7] mb-10 leading-[1.1] max-w-4xl">
-          Ruma Intelligence: Ingenieria de lo Invisible
+        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tight text-[#F5F5F7] mb-10 leading-[1.1] max-w-4xl text-left">
+          Ruma Intelligence: Ingeniería de lo Invisible
         </h1>
 
-        <p className="font-sans text-lg md:text-xl lg:text-2xl text-[#A0A0A0] leading-relaxed max-w-3xl">
-          Optimizando la transicion del diseno a la realidad tecnica para recuperar tu recurso mas valioso: el tiempo de creacion.
+        <p className="font-sans text-lg md:text-xl lg:text-2xl text-[#A0A0A0] leading-relaxed max-w-3xl text-left">
+          Optimizando la transición del diseño a la realidad técnica para recuperar tu recurso más valioso: el tiempo de creación.
         </p>
       </div>
 
