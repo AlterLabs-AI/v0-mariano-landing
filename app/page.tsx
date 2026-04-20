@@ -18,7 +18,7 @@ export type ProposalState = "idle" | "loading" | "success"
 
 const sections = [
   "hero",
-  "diagnostico", 
+  "diagnostico",
   "solucion",
   "que-no-hacemos",
   "rentabilidad",
@@ -52,11 +52,40 @@ export default function ProposalPage() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const handleProtocolSelect = (protocol: string) => {
-    setSelectedProtocol(protocol)
-    setShowTransition(true)
-    setProposalState("loading")
-  }
+  const handleProtocolSelect = async (protocol: string) => {
+    // 1. Cambiamos el estado para activar la animación de "Inicializando Protocolo"
+    setProposalState("loading");
+    setSelectedProtocol(protocol);
+
+    try {
+      // 2. Disparamos al webhook de producción de n8n
+      const response = await fetch("https://ng-alterlabs.app.n8n.cloud/webhook/mariano-propuesta", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          protocol: protocol, // Envía "core" o "apex" dependiendo del botón
+          clientName: "Mariano",
+          proposalTitle: "Ruma Intelligence: Solid-to-Excel",
+          proposalId: "RUMA-001"
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Falla en la comunicación con el laboratorio.");
+      }
+
+      // 3. Si n8n responde 200 OK, pasamos a la pantalla de éxito
+      setProposalState("success");
+
+    } catch (error) {
+      console.error("Error al inicializar el protocolo:", error);
+      // Opcional: si querés que el botón vuelva a estar disponible si hay un error, 
+      // descomentá la línea de abajo.
+      // setProposalState("idle"); 
+    }
+  };
 
   const handleTransitionComplete = () => {
     setShowTransition(false)
@@ -68,7 +97,7 @@ export default function ProposalPage() {
       <Navbar />
       <ScrollSpyNav />
       <StatusIndicator currentSection={activeSection} />
-      <TransitionScreen 
+      <TransitionScreen
         isActive={showTransition}
         protocol={selectedProtocol}
         onComplete={handleTransitionComplete}
@@ -80,7 +109,7 @@ export default function ProposalPage() {
       <RentabilidadSection />
       <InversionSection />
       <SoberaniaSection />
-      <CTASection 
+      <CTASection
         proposalState={proposalState}
         onProtocolSelect={handleProtocolSelect}
         selectedProtocol={selectedProtocol}
