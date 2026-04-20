@@ -20,8 +20,8 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: 'Alter Labs | Propuesta Ejecutiva - Ruma Muebles',
-  description: 'De la Fricción Operativa a la Ingeniería de lo Invisible. Propuesta de automatización para Ruma Muebles.',
+  title: 'Alter Labs | Furniture Intelligence',
+  description: 'Ingenieria de lo Invisible. Optimizando la transicion del diseno a la realidad tecnica.',
   generator: 'v0.app',
 }
 

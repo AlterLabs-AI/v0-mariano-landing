@@ -19,16 +19,15 @@ export function HeroSection() {
     resize()
     window.addEventListener("resize", resize)
 
-    // Abstract grid animation
     const nodes: { x: number; y: number; vx: number; vy: number }[] = []
-    const nodeCount = 40
+    const nodeCount = 35
 
     for (let i = 0; i < nodeCount; i++) {
       nodes.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.3,
-        vy: (Math.random() - 0.5) * 0.3,
+        vx: (Math.random() - 0.5) * 0.2,
+        vy: (Math.random() - 0.5) * 0.2,
       })
     }
 
@@ -36,7 +35,6 @@ export function HeroSection() {
       ctx.fillStyle = "#050505"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      // Update and draw nodes
       nodes.forEach((node, i) => {
         node.x += node.vx
         node.y += node.vy
@@ -44,27 +42,25 @@ export function HeroSection() {
         if (node.x < 0 || node.x > canvas.width) node.vx *= -1
         if (node.y < 0 || node.y > canvas.height) node.vy *= -1
 
-        // Draw connections
         nodes.forEach((other, j) => {
           if (i === j) return
           const dx = other.x - node.x
           const dy = other.y - node.y
           const dist = Math.sqrt(dx * dx + dy * dy)
 
-          if (dist < 150) {
+          if (dist < 180) {
             ctx.beginPath()
             ctx.moveTo(node.x, node.y)
             ctx.lineTo(other.x, other.y)
-            ctx.strokeStyle = `rgba(255, 68, 0, ${0.05 * (1 - dist / 150)})`
+            ctx.strokeStyle = `rgba(249, 115, 22, ${0.03 * (1 - dist / 180)})`
             ctx.lineWidth = 0.5
             ctx.stroke()
           }
         })
 
-        // Draw node
         ctx.beginPath()
         ctx.arc(node.x, node.y, 1.5, 0, Math.PI * 2)
-        ctx.fillStyle = "rgba(107, 107, 107, 0.5)"
+        ctx.fillStyle = "rgba(107, 107, 107, 0.4)"
         ctx.fill()
       })
 
@@ -77,33 +73,27 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background Animation */}
+    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 z-0"
       />
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-6 lg:px-12 py-24 text-center">
-        {/* Eyebrow */}
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#6B6B6B] mb-8">
-          PROPUESTA EJECUTIVA // RUMA MUEBLES X ALTER LABS
+      <div className="relative z-10 mx-auto max-w-6xl px-6 lg:px-12 py-24 w-full">
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#6B6B6B] mb-8">
+          ALTER LABS // FURNITURE INTELLIGENCE
         </p>
 
-        {/* Headline */}
-        <h1 className="font-sans text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-[#F5F5F7] mb-12 leading-[1.1] text-balance">
-          De la Fricción Operativa a la Ingeniería de lo Invisible.
+        <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-[#F5F5F7] mb-10 leading-[1.1] max-w-4xl">
+          Furniture Intelligence: Ingenieria de lo Invisible
         </h1>
 
-        {/* Manifesto - Editorial Serif */}
-        <p className="font-serif text-xl md:text-2xl lg:text-[1.75rem] text-[#F5F5F7] leading-relaxed max-w-3xl mx-auto">
-          Hola Mariano. En Alter Labs somos un laboratorio de optimización. Nuestra misión es crear tecnología que no se note: la máquina procesa masivamente, tú decides estratégicamente.
+        <p className="font-serif text-lg md:text-xl lg:text-2xl text-[#A0A0A0] leading-relaxed max-w-3xl">
+          Optimizando la transicion del diseno a la realidad tecnica para recuperar tu recurso mas valioso: el tiempo de creacion.
         </p>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10">
+      <div className="absolute bottom-12 left-6 lg:left-12 z-10">
         <div className="w-[1px] h-16 bg-gradient-to-b from-[#6B6B6B] to-transparent" />
       </div>
     </section>
