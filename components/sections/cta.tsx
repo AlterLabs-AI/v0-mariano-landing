@@ -10,7 +10,7 @@ interface CTASectionProps {
 
 export function CTASection({ proposalState, onProtocolSelect }: CTASectionProps) {
   return (
-    <section id="cta" className="py-32 px-6 lg:px-12 min-h-[50vh] flex items-center">
+    <section id="cta" className="py-16 px-6 lg:px-12 min-h-[50vh] flex items-center">
       <div className="mx-auto max-w-6xl w-full">
         {proposalState === "idle" && (
           <>

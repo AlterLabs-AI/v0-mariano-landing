@@ -1,6 +1,6 @@
 export function SoberaniaSection() {
   return (
-    <section id="soberania" className="py-32 px-6 lg:px-12 bg-[#0A0A0A]">
+    <section id="soberania" className="py-16 px-6 lg:px-12 bg-[#0A0A0A]">
       <div className="mx-auto max-w-6xl">
         <div className="max-w-3xl">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#6B6B6B] mb-6">

@@ -19,9 +19,9 @@ const items = [
 
 export function QueNoHacemosSection() {
   return (
-    <section id="que-no-hacemos" className="py-32 px-6 lg:px-12">
+    <section id="que-no-hacemos" className="py-16 px-6 lg:px-12">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-20">
+        <div className="mb-10">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#6B6B6B] mb-6">
             LÍMITES CLAROS
           </p>
